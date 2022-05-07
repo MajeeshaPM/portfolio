@@ -1,0 +1,147 @@
+:root{
+    --light-blue:rgba(247, 253, 253, 0.993) ;
+    --dark-blue:rgba(234, 250, 248, 0.973);
+    --main-content-head-fontsize:50px;
+    --main-content-fontfamily: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body{
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:auto ;
+    grid-template-areas: "header"
+                        "Education"
+                        "Experience"
+                        "footer";
+}
+
+header{
+    height: 100vh;
+    width: 100%;
+    grid-area: header;
+    background-image: url(images/bckgrnd.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.navigation_bar{
+    grid-row: 1;
+    grid-column: 3;
+    font-size: 20px;
+    padding-left: 150px;
+   
+}
+.navigation_bar a{
+    text-decoration: none;
+}
+.navigation_bar a:hover{
+    text-decoration: underline;
+    color: rgb(129, 174, 241);
+}
+
+.fa-brands {
+     color:rgb(87, 133, 202);
+     margin-left: 100px;
+     font-size: 25px;
+}
+P{
+    grid-row: 1;
+    grid-column: 1;
+    font-size: 40px;
+    margin-left: 40px;
+    margin-top:130px ;
+    color:rgb(6, 1, 19);
+}
+#pro_image{
+    grid-row: 3;
+    grid-column: 2;
+    margin-top: 200px;
+}
+
+section{
+    height: auto;
+    width:100%;
+}
+#education{
+    height: 100vh;
+    width: 100%;
+    grid-area: Education;
+    background-image: url("images/undraw_true_friends.png") ;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+}
+.main-head-details{
+    margin-top:-100px ;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: space-evenly;
+    z-index:-1;
+    margin-right: 30px;
+        
+}
+.detail-boxes{
+    height: 100px;
+    width: 500px;
+    background-color: var(--light-blue);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+}
+h2{
+    margin-top: -11px;
+}
+
+.heading{
+    background-color:var(--dark-blue) ;
+    font-family: var(--main-content-fontfamily);
+    font-size: var(--main-content-head-fontsize);
+    padding: 50px;
+}
+#experience{
+    height: 100vh;
+    width: 100%;
+    grid-area: Experience;
+    flex-direction: row;
+    background-image: url(images/5f4d794133ffde5ffa5cd8f8_remote-worker-mobile.png);
+    background-size:auto;
+    z-index: -1;
+}
+.exp_main-head-details{
+    margin-top:-100px ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left:500px ;
+    /* margin-right: 8px; */
+}
+.exp-detail-boxes{
+    height: 300px;
+    width: 370px;
+    background-color: var(--light-blue);
+    align-items: center;
+    padding-left: 5px;
+}
+footer{
+    height: 100vh;
+    width: 100%;
+    grid-area: footer;
+    background-color: rgb(199, 234, 250);
+    position:relative;
+}
+#footer-btn{
+    width: 200px;
+    height: 50px;
+    /* border-radius: 15px; */
+    margin-top: 200px;
+    margin-left: 250px;
+    border:solid white 3px;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: rgb(199, 234, 250);
+}
